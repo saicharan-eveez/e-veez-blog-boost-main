@@ -146,19 +146,19 @@ const Blog = () => {
     <p className="text-base md:text-xl mb-6">
       Insights and stories from India’s leading electric mobility platform
     </p>
-    <div className="flex flex-wrap justify-center gap-4">
-      <div className="bg-white/10 px-4 py-2 rounded-xl text-sm">
-        {km.toLocaleString()}+ KM <span className="text-yellow-400 animate-pulse">🛵</span>
-      </div>
-      <div className="bg-white/10 px-4 py-2 rounded-xl flex items-center gap-2 text-sm">
-        <Leaf className="w-5 h-5 text-white" />
-        <span>Carbon Neutral</span>
-      </div>
-      <div className="bg-white/10 px-4 py-2 rounded-xl flex items-center gap-2 text-sm">
-        <Building2 className="w-5 h-5 text-white" />
-        <span>{partners}+ Partners</span>
-      </div>
-    </div>
+    <div className="flex flex-wrap justify-center gap-4 mt-4">
+  <div className="bg-white/10 px-6 py-3 rounded-2xl text-white text-base md:text-lg font-semibold">
+    {km.toLocaleString()}+ KM <span className="text-yellow-400 animate-pulse text-xl">🛵</span>
+  </div>
+  <div className="bg-white/10 px-6 py-3 rounded-2xl flex items-center gap-2 text-white text-base md:text-lg font-semibold">
+    <Leaf className="w-6 h-6 text-white" />
+    <span>Carbon Neutral</span>
+  </div>
+  <div className="bg-white/10 px-6 py-3 rounded-2xl flex items-center gap-2 text-white text-base md:text-lg font-semibold">
+    <Building2 className="w-6 h-6 text-white" />
+    <span>{partners}+ Partners</span>
+  </div>
+</div>
   </div>
 </section>
 
