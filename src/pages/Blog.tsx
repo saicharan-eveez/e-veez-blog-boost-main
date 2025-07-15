@@ -131,27 +131,37 @@ const Blog = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
-        <img src={heroBlog} alt="Hero" className="absolute inset-0 w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-black/60" />
-        <div className="relative z-10 text-white text-center max-w-3xl px-6">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">Electrify Your Knowledge</h1>
-          <p className="text-xl mb-6">Insights and stories from India’s leading electric mobility platform</p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <div className="bg-white/10 px-4 py-2 rounded-xl text-white text-sm">
-              {km.toLocaleString()}+ KM <span className="text-yellow-400 animate-pulse">🛵</span>
-            </div>
-            <div className="bg-white/10 px-4 py-2 rounded-xl flex items-center gap-2">
-              <Leaf className="w-5 h-5 text-white" />
-              <span>Carbon Neutral</span>
-            </div>
-            <div className="bg-white/10 px-4 py-2 rounded-xl flex items-center gap-2">
-              <Building2 className="w-5 h-5 text-white" />
-              <span>{partners}+ Partners</span>
-            </div>
-          </div>
-        </div>
-      </section>
+{/* Hero Section */}
+<section className="relative h-[60vh] md:h-[75vh] w-full flex items-center justify-center overflow-hidden">
+  <img
+    src={heroBlog}
+    alt="Hero Background"
+    className="absolute inset-0 w-full h-full object-cover object-center"
+  />
+  <div className="absolute inset-0 bg-black/60" />
+  <div className="relative z-10 text-white text-center max-w-3xl px-4 md:px-6">
+    <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4">
+      Electrify Your Knowledge
+    </h1>
+    <p className="text-base md:text-xl mb-6">
+      Insights and stories from India’s leading electric mobility platform
+    </p>
+    <div className="flex flex-wrap justify-center gap-4">
+      <div className="bg-white/10 px-4 py-2 rounded-xl text-sm">
+        {km.toLocaleString()}+ KM <span className="text-yellow-400 animate-pulse">🛵</span>
+      </div>
+      <div className="bg-white/10 px-4 py-2 rounded-xl flex items-center gap-2 text-sm">
+        <Leaf className="w-5 h-5 text-white" />
+        <span>Carbon Neutral</span>
+      </div>
+      <div className="bg-white/10 px-4 py-2 rounded-xl flex items-center gap-2 text-sm">
+        <Building2 className="w-5 h-5 text-white" />
+        <span>{partners}+ Partners</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Trending Section */}
       <section className="py-16 bg-white">
