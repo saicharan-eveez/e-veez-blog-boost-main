@@ -1,4 +1,3 @@
-import Navbar from "@/components/Navbar";
 import { CheckCircle, Phone, Truck, BarChart3, Repeat, Shield } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -51,8 +50,6 @@ const benefits = [
 const HowItWorks = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
-      
       {/* Hero Section */}
       <section className="py-20 bg-gradient-hero text-white">
         <div className="max-w-4xl mx-auto px-6 text-center">

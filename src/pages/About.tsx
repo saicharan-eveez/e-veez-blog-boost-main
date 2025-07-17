@@ -1,18 +1,14 @@
-import Navbar from "@/components/Navbar";
-import { Zap, Users, Leaf, Target, Heart, Globe } from "lucide-react";
+import { Zap, Users, Leaf, Target, Heart } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const About = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
-      
+
       {/* Hero Section */}
       <section className="py-20 bg-gradient-hero text-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            About EVeez
-          </h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">About EVeez</h1>
           <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto">
             Pioneering India's electric mobility revolution with sustainable, 
             technology-driven solutions for businesses.

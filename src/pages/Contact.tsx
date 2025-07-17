@@ -1,4 +1,6 @@
-import Navbar from "@/components/Navbar";
+// Removed: import Navbar from "@/components/Navbar";
+// Removed: import Footer from "@/components/Footer";
+
 import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -35,8 +37,8 @@ const contactInfo = [
 const Contact = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
-      
+      {/* Removed <Navbar /> */}
+
       {/* Hero Section */}
       <section className="py-20 bg-gradient-hero text-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
@@ -81,7 +83,6 @@ const Contact = () => {
       <section className="py-20 bg-muted/30">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12">
-            {/* Form */}
             <div>
               <h2 className="text-3xl font-bold mb-6">Send us a Message</h2>
               <p className="text-muted-foreground mb-8">
@@ -150,7 +151,6 @@ const Contact = () => {
               </form>
             </div>
 
-            {/* Info Card */}
             <div>
               <Card className="bg-gradient-card">
                 <CardHeader>
@@ -163,35 +163,30 @@ const Contact = () => {
                       Scale your fleet based on business needs with no long-term commitments.
                     </p>
                   </div>
-                  
                   <div>
                     <h4 className="font-semibold mb-2">✅ 60-80% Cost Savings</h4>
                     <p className="text-muted-foreground text-sm">
                       Significantly reduce fuel and maintenance costs compared to traditional vehicles.
                     </p>
                   </div>
-                  
                   <div>
                     <h4 className="font-semibold mb-2">✅ Zero Emissions</h4>
                     <p className="text-muted-foreground text-sm">
                       Contribute to a cleaner environment with pollution-free deliveries.
                     </p>
                   </div>
-                  
                   <div>
                     <h4 className="font-semibold mb-2">✅ Complete Support</h4>
                     <p className="text-muted-foreground text-sm">
                       24/7 technical support, maintenance, and replacement services included.
                     </p>
                   </div>
-                  
                   <div>
                     <h4 className="font-semibold mb-2">✅ Smart Analytics</h4>
                     <p className="text-muted-foreground text-sm">
                       Track performance, savings, and environmental impact through our dashboard.
                     </p>
                   </div>
-                  
                   <div className="pt-4 border-t">
                     <p className="text-center text-sm text-muted-foreground">
                       Join 500+ businesses already using EVeez
@@ -221,6 +216,8 @@ const Contact = () => {
           </div>
         </div>
       </section>
+
+      {/* Removed <Footer /> */}
     </div>
   );
 };

@@ -1,12 +1,11 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Zap, Leaf, Building2 } from "lucide-react";
-import Navbar from "@/components/Navbar";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
+
       {/* Hero Section */}
       <section className="min-h-screen flex items-center justify-center bg-gradient-hero text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-orange/90 to-orange-light/80" />
@@ -14,9 +13,7 @@ const Index = () => {
           <div className="mb-6">
             <Zap className="w-16 h-16 mx-auto mb-4 text-white" />
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Welcome to EVeez
-          </h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">Welcome to EVeez</h1>
           <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto">
             Electrifying India's mobility sector with eBikes on subscription. 
             Reducing carbon footprint, one pollution-free delivery at a time.
@@ -25,9 +22,9 @@ const Index = () => {
             <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90">
               Start Your Subscription
             </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
+            <Button
+              size="lg"
+              variant="outline"
               className="border-white text-white hover:bg-white/10"
               asChild
             >
@@ -37,7 +34,7 @@ const Index = () => {
               </Link>
             </Button>
           </div>
-          
+
           <div className="grid md:grid-cols-3 gap-8 mt-16">
             <div className="text-center">
               <Leaf className="w-8 h-8 mx-auto mb-3 text-green-accent" />
@@ -72,6 +69,7 @@ const Index = () => {
           </p>
         </div>
       </section>
+
     </div>
   );
 };
